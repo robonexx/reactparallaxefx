@@ -38,7 +38,7 @@ const HomeDesktop = ({handleScroll, offsetY}) => {
                 </p>
                 <p>
                 I don't have a standard offer. Because the truth is every project is unique, rest assure so is the ideas of a creative mind in work. <br/>
-                Throughout our partnership, I will act as an extension of your team. And because we're on the same path, we do everything with success. <br/>
+                Throughout our partnership, I will act as an extension of your team. And because we're in this together, we do everything with success. <br/>
                 Openness, communication, accountability & quality in mind.
                 </p>
         </div>
