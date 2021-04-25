@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Home.scss'
+import '../HomeDesktop.scss'
 
 const About = () => {
     return ( 

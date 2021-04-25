@@ -1,12 +1,12 @@
 import React from 'react'
-import '../Home.scss'
+import '../HomeDesktop.scss'
 import About from './About'
 
 /* const transStyle = {
     transform: `translateY(${offsetY * 0.5}px)`
 } */
 
-const Home = ({handleScroll, offsetY}) => {
+const HomeDesktop = ({handleScroll, offsetY}) => {
 
 
     const Content = () => (
@@ -48,4 +48,4 @@ const Home = ({handleScroll, offsetY}) => {
      );
 }
  
-export default Home;
+export default HomeDesktop;

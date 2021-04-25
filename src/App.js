@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './App.scss';
-import Home from './pages/Home'
+import HomeDesktop from './pages/HomeDesktop'
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <Home handleScroll={handleScroll} offsetY={offsetY} setOffsetY={setOffsetY}/>
+      <HomeDesktop handleScroll={handleScroll} offsetY={offsetY} setOffsetY={setOffsetY}/>
       
     </div>
   );
