@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 .Home {
     background-image: url("./rob1.jpg");
-    background-size: 200%;
+    background-size: 180%;
     background-color: rgb(231, 200, 159);
-    background-blend-mode: luminosity;
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: top;
     width: 100vw;
-    height: 300vh;
+    height: 280vh;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -19,45 +19,52 @@
   
  
   &__content,
+  &__original,
   &__bg,
   &__bg-profile {
     width: 1080px;
     height: 1280px;
     background-repeat: no-repeat;
+    background-position: center left;
     background-size: cover;
     position: absolute;
     overflow: hidden;
     
   }
 
+  &__original {
+    background-image: url("./original.png");
+    opacity: 0.6;
+  }
+
   // images need work, better quality this is just for test
   &__bg {
-    background-image: url("./parisstreet.png");
-    background-color: rgba(0,0,0,0.6);
+    background-image: url("./bgcut.png");
+    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: darken;
-    border-bottom-right-radius: 30rem;
-    animation: colors 15s ease-in infinite;
+    animation: colors 20s ease-in 1;
+    animation-delay: 10s;
 
     // not shure about using the animation, might try spring or framer instead
 
     @keyframes colors {
         0% {
-          background-color: rgba(0,0,0,0.6);
+          background-color: rgba(20, 20, 19, 0.6);
         }
         20% {
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(33, 36, 23, 0.6);
         }
         40% {
-            background-color: rgba(45, 46, 45,0.7);
+            background-color: rgba(25, 37, 37, 0.7);
         }
         60% {
-            background-color: rgba(214, 194, 240,0.5);
+            background-color: rgba(19, 18, 46, 0.9);
         }
         80% {
-            background-color: rgb(35, 12, 44);
+            background-color: rgba(23, 12, 27, 0.849);
         }
-        99% {
-            background-color: rgb(35, 12, 44);
+        90% {
+            background-color: rgba(20, 16, 22, 0.76);
         }
     }
     
@@ -65,10 +72,11 @@
 
   // images needs to be re-done for better quality this is just for test
   &__bg-profile {
-    background-image: url("./robertwagarparis.png");
+    background-image: url("./profile.png");
     filter: drop-shadow(3px 3px 10px #000000) drop-shadow(2px 2px 20px #242424);
     z-index: 5;
-    border-radius: 50rem;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 50%;
   }
 
   &__content {
@@ -86,8 +94,8 @@
 
       &__text {
           position: absolute;
-          top: 7rem;
-          right: 3rem;
+          top: 4rem;
+          right: 5rem;
           z-index: 10;
           margin: 10px 0;
           font-size: 6rem;
@@ -97,7 +105,7 @@
 
       &__subtitle {
         position: absolute;
-        top: 2rem;
+        top: 0rem;
         left: 5rem;
         text-align: left;
         font-size: 4rem;
@@ -136,7 +144,7 @@
     display: flex;
     justify-content: center;
     width: 1080px;
-    height: 200vh;
+    height: 180vh;
     z-index: 50;
     top: 100vh;
     font-family: 'Libre Baskerville', serif;

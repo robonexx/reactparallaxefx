@@ -13,9 +13,8 @@ const Home = ({handleScroll, offsetY}) => {
         <>
         <div className="Parallax__heading Parallax__content">
             <h1 className="Parallax__heading__text"
-            style={{transform: `translateY(${offsetY * 0.1}px)`}}>Robert Wägar</h1>
-            <h3 className="Parallax__heading__subtitle"
-            style={{transform: `translateY(${offsetY * 1.2}px)`}}>[kriːeɪˈtɪvɪti]</h3>
+            style={{transform: `translateY(${offsetY * 0.6}px)`}}>Robert Wägar</h1>
+            <h3 className="Parallax__heading__subtitle">[kriːeɪˈtɪvɪti]</h3>
         </div>
         
         </>
@@ -25,6 +24,8 @@ const Home = ({handleScroll, offsetY}) => {
         <div className="Home" handleScroll={handleScroll}>
             
             <section className="Parallax">
+                <div className="Parallax__original" 
+                style={{transform: `translateY(${offsetY * 0.1}px)`}}/>
                 <div className="Parallax__bg" 
                 style={{transform: `translateY(${offsetY * 0.1}px)`}}/>
                 <div className="Parallax__bg-profile" 
