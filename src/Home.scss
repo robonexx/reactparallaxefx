@@ -30,12 +30,15 @@
     
   }
 
+  // images need work, better quality this is just for test
   &__bg {
     background-image: url("./parisstreet.png");
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: darken;
     border-bottom-right-radius: 30rem;
     animation: colors 15s ease-in infinite;
+
+    // not shure about using the animation, might try spring or framer instead
 
     @keyframes colors {
         0% {
@@ -60,6 +63,7 @@
     
   }
 
+  // images needs to be re-done for better quality this is just for test
   &__bg-profile {
     background-image: url("./robertwagarparis.png");
     filter: drop-shadow(3px 3px 10px #000000) drop-shadow(2px 2px 20px #242424);
